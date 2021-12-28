@@ -2,9 +2,10 @@ import React from 'react';
 
 function Schedule() {
     return (
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie.
-        </p>
+        <section className="my-5" >
+            <h1 id="schedule">NFL Schedule</h1>
+            <div className="my-2"></div>
+        </section>
     )
 }
 
