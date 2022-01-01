@@ -13,6 +13,11 @@ main {
 
 #about {
   font-family: 'Spectral SC', serif;
+  margin: 0;
+  padding: 2rem;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
 }
 
 .navigation {
@@ -21,14 +26,15 @@ main {
   justify-content: space-evenly;
 }
 
-img {
+hero {
   position: relative;
-  height:300px;
-  width: 300px;
-  background: #54abfb;
-  border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
-  opacity: 0.8;
-  border: 2px solid #3d93ff; 
+  background-size: cover;
+  background-position: center;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./assets/cover/beast.jpg');
+  display: grid;
+  place-items: center;
 }
 
 code {
