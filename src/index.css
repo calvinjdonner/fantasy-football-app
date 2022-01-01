@@ -5,8 +5,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 50px 30px;
+}
+
 #about {
   font-family: 'Spectral SC', serif;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+img {
+  position: relative;
+  height:300px;
+  width: 300px;
+  background: #54abfb;
+  border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+  opacity: 0.8;
+  border: 2px solid #3d93ff; 
 }
 
 code {
