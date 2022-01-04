@@ -3,6 +3,8 @@ import About from './components/About';
 import Join from './components/Join';
 import Schedule from './components/Schedule';
 import Nav from './components/Nav';
+import footballImages from './components/Images';
+
 
 function App() {
 
@@ -10,7 +12,7 @@ function App() {
     <div className="App">
       <Nav></Nav>
       <main>
-        <About></About>
+        <About slides={footballImages}></About>
         <Join></Join>
         <Schedule></Schedule>
       </main>
