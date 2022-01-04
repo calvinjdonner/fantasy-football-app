@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRoutes as Router, Route, Switch } from 'react-router-dom';
 import About from './components/About';
 import Join from './components/Join';
 import Schedule from './components/Schedule';
