@@ -12,6 +12,7 @@ import { setContext } from '@apollo/client/link/context';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
+import footballImages from './components/Images';
 
 import About from './components/About';
 import Join from './components/Join';
@@ -48,7 +49,7 @@ function App() {
             <Route exact path="/signup" component={Signup} />
           </Switch>
           <main>
-            <About></About>
+            <About slides={footballImages}></About>
             <Join></Join>
             <Schedule></Schedule>
           </main>
