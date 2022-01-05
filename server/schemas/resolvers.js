@@ -1,38 +1,37 @@
-const { signToken } = require("../utils/auth");
+
+const { AuthenticationError } = require('apollo-server-express');
+const { User, Book } = require('../models');
+const { signToken } = require('../utils/auth');
 
 const resolvers = {
-  Mutation: {
-    addUser: async (parent, args) => {
-      const user = await User.create(args);
-      const token = signToken(user);
+    Query: {
 
-      return { token, user };
     },
-    login: async (parent, { email, password }) => {
-      const user = await User.findOne({ email });
 
-      if (!user) {
-        throw new AuthenticationError("Incorrect credentials");
-      }
+    Mutation: {
+        addUser: async (parent, args) => {
+            const user = await User.create(args);
+            const token = signToken(user);
 
-      const correctPw = await user.isCorrectPassword(password);
+            return { token, user };
+        },
+        login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
 
-      if (!correctPw) {
-        throw new AuthenticationError("Incorrect credentials");
-      }
+            if (!user) {
+                throw new AuthenticationError('Incorrect credentials');
+            }
 
-      const token = signToken(user);
-      return { token, user };
-    },
-  },
+            const correctPw = await user.isCorrectPassword(password);
 
-  Query: {
-    me: async (parent, args) => {
-      const userData = await User.findOne({}).select("-__v -password");
+            if (!correctPw) {
+                throw new AuthenticationError('Incorrect credentials');
+            }
 
-      return userData;
-    },
-  },
-};
+            const token = signToken(user);
+            return { token, user };
+        },
+    }
+}
 
 module.exports = resolvers;
