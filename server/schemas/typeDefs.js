@@ -1,3 +1,4 @@
+
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
@@ -17,5 +18,4 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
     }
 `
-
 module.exports = typeDefs;
