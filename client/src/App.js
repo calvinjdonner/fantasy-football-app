@@ -7,16 +7,13 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-import Axios from "axios";
 
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import footballImages from "./components/Images";
-
-import About from "./components/About";
-import Join from "./components/Join";
-import Schedule from "./components/Schedule";
+import Home from "./pages/Home";
+import About from "./components/About"
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -38,14 +35,6 @@ const client = new ApolloClient({
 });
 
 function App() {
-  
-  const nflNews = () => {
-    Axios.get(
-      "https://api.sportsdata.io/v3/nfl/scores/json/News?key=8d47ddc73491478086570cc47316de1b"
-    ).then((response) => {
-      console.log(response);
-    });
-  };
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -54,14 +43,10 @@ function App() {
           <Switch>
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
+            <Route exact path="/" component={Home} />
           </Switch>
           <main>
             <About slides={footballImages}></About>
-            <Join></Join>
-            <Schedule></Schedule>
-            <div>
-              News <button onClick={nflNews}>Get NFL news now</button>
-            </div>
           </main>
         </div>
       </Router>
