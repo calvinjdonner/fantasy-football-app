@@ -8,7 +8,7 @@ const { auth } = require("./utils/auth");
 const { start } = require("repl");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 const server = async () => {
   const startServer = new ApolloServer({
