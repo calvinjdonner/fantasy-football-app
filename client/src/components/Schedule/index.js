@@ -1,12 +1,26 @@
-import React from 'react';
+import Axios from "axios";
+import React from "react";
 
 function Schedule() {
-    return (
-        <section className="my-5" >
-            <h1 id="schedule">NFL Schedule</h1>
-            <div className="my-2"></div>
-        </section>
-    )
+  const nflSchedule = () => {
+    Axios.get(
+      "https://api.sportsdata.io/v3/nfl/scores/json/Schedules/2021?key=8d47ddc73491478086570cc47316de1b"
+    ).then((response) => {
+      console.log(response);
+    });
+  };
+
+  return (
+    <section className="my-5">
+      <h1 id="schedule">NFL Schedule</h1>
+      <div className="my-2"></div>
+      <div>
+        NFL Schedule <button onClick={nflSchedule}></button>
+      </div>
+    </section>
+  );
 }
 
-export default Schedule
+export default Schedule;
+
+// https://api.sportsdata.io/v3/nfl/scores/json/Schedules/2021?key=8d47ddc73491478086570cc47316de1b
