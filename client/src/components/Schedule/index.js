@@ -18,10 +18,23 @@ function Schedule() {
 
   return post.map((post) => {
     return (
-      <section className="container" id="card" key={post.data}>
-        <p className="away-team" id="awayteam">Away Team - {post.AwayTeam}</p>
-        <p className="home-team" id="hometeam">Home Team - {post.HomeTeam}</p>
-        <p className="day-date" id ="date">Date {post.Date}</p>
+      <section className="container" id="containers">
+        <div className="card" id="card" key={post.data}>
+          <p className="away-team" id="awayteam">
+            Away Team - {post.AwayTeam}
+          </p>
+          <p className="home-team" id="hometeam">
+            Home Team - {post.HomeTeam}
+          </p>
+          <span />
+          <p className="day-date" id="date">
+            Date {post.Date}
+          </p>
+          <p className="forecast-wind" id="forecastwind">
+            {" "}
+            Wind speed - {post.ForecastWindSpeed}
+          </p>
+        </div>
       </section>
     );
   });

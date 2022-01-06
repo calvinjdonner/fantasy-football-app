@@ -13,7 +13,7 @@ import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import footballImages from "./components/Images";
 import Home from "./pages/Home";
-import About from "./components/About"
+import About from "./components/About";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -40,14 +40,14 @@ function App() {
       <Router>
         <div className="App">
           <Nav />
+          <main>
+            <About slides={footballImages}></About>
+          </main>
           <Switch>
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/" component={Home} />
           </Switch>
-          <main>
-            <About slides={footballImages}></About>
-          </main>
         </div>
       </Router>
     </ApolloProvider>
