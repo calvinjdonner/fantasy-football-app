@@ -19,8 +19,9 @@ function Schedule() {
   return post.map((post) => {
     return (
       <section className="container" id="card" key={post.data}>
-        <h1 className="away-team" id="awayteam">{post.AwayTeam}</h1>
-        <p className="home-team" id="hometeam">{post.HomeTeam}</p>
+        <p className="away-team" id="awayteam">Away Team - {post.AwayTeam}</p>
+        <p className="home-team" id="hometeam">Home Team - {post.HomeTeam}</p>
+        <p className="day-date" id ="date">Date {post.Date}</p>
       </section>
     );
   });
