@@ -27,11 +27,7 @@ const About = ({ slides }) => {
             {footballImages.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>
-<<<<<<< HEAD
-                        {index === current && (<img src ={slide.image} alt='travel image' className='image' />)}
-=======
                         {index === current && (<img src ={slide.image} alt='travel' className='image' />)}
->>>>>>> mitchell
                     </div>
                 )
             })}
