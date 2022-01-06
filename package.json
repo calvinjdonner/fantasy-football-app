@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-server-express": "^3.6.1",
     "react-icons": "^4.3.1"
   },
   "scripts": {
