@@ -96,6 +96,11 @@ code {
   padding: 5px;
 }
 
+#page-title {
+  text-align: center;
+  font-size: 5rem;
+}
+
 /* .App main {
   display: flex;
   flex-wrap: wrap;
