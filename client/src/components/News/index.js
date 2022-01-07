@@ -52,7 +52,7 @@ function News() {
         console.log(data);
         setPost(data);
       });
-  });
+  } ,[]);
   if (!post) return null;
 
   return post.map((post) => {

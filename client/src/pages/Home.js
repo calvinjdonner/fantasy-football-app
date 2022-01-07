@@ -5,7 +5,6 @@ import Schedule from "../components/Schedule";
 const Home = () => {
   return (
     <div className="container">
-      <News />
       <Schedule />
     </div>
   );

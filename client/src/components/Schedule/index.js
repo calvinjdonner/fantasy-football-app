@@ -13,7 +13,7 @@ function Schedule() {
         console.log(data);
         setPost(data);
       });
-  });
+  } ,[]);
   if (!post) return null;
 
   return post.map((post) => {
@@ -32,7 +32,7 @@ function Schedule() {
           </p>
           <p className="forecast-wind" id="forecastwind">
             {" "}
-            Wind speed - {post.ForecastWindSpeed}
+            Wind speed - {post.ForecastWindSpeed + " mph"}
           </p>
         </div>
       </section>
