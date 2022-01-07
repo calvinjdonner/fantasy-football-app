@@ -27,11 +27,7 @@ main {
   justify-content: space-evenly;
 }
 
-<<<<<<< HEAD
-#id {
-=======
 #hero {
->>>>>>> 2afcf9caa703b88ad377c5ad1c69c797ad7e6fd5
   position: relative;
   background-size: cover;
   background-position: center;
@@ -105,16 +101,3 @@ code {
   font-size: 5rem;
 }
 
-/* .App main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50px;
-  height: 50px;
-} */
-<<<<<<< HEAD
-
-#email {
-  
-}
-=======
->>>>>>> 2afcf9caa703b88ad377c5ad1c69c797ad7e6fd5
