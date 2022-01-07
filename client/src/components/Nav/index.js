@@ -41,7 +41,7 @@ function Nav() {
     return (
         <header className="flex-row px-1">
             <h1>
-                
+                Premiere Fantasy Football
             </h1>
 
             <nav>

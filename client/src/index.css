@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Spartan', sans-serif;
+  font-family: 'PT Serif', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,7 +13,7 @@ main {
 }
 
 #about {
-  font-family: 'Spectral SC', serif;
+  font-family: "Spectral SC", serif;
   margin: 0;
   padding: 2rem;
   font-size: 5rem;
@@ -26,19 +27,59 @@ main {
   justify-content: space-evenly;
 }
 
-hero {
+#hero {
   position: relative;
   background-size: cover;
   background-position: center;
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./assets/cover/beast.jpg');
   display: grid;
   place-items: center;
 }
 
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -46,13 +87,11 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  top: 0;
-  bottom: 0;
   border: 2px solid gray;
 }
 
 .container p {
-  display:flex;
+  display: flex;
   margin: 10px;
   padding: 5px;
 }
