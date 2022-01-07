@@ -26,7 +26,7 @@ main {
   justify-content: space-evenly;
 }
 
-hero {
+#id {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -63,3 +63,7 @@ code {
   width: 50px;
   height: 50px;
 } */
+
+#email {
+  
+}
