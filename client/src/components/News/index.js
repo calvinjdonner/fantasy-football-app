@@ -49,17 +49,28 @@ function News() {
     fetch(apiUrl)
       .then((data) => data.json())
       .then((data) => {
-        console.log(data);
+        console.log(data, "Data retrieved");
         setPost(data);
       });
-  } ,[]);
+  }, []);
+
+  useEffect(() => {
+    console.log(post);
+  }, []);
+  
   if (!post) return null;
+
+
 
   return post.map((post) => {
     return (
-      <section className="container" id="card" key={post.data}>
-        <h1 className="info-news" id="title">{post.title}</h1>
-        <p className="news-info" id="content">{post.content}</p>
+      <section className="container" id="card" key={post.NewsID}>
+        <h1 className="info-news" id="title">
+          {post.Title}
+        </h1>
+        <p className="news-info" id="content">
+          {post.Content}
+        </p>
       </section>
     );
   });
