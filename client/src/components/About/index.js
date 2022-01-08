@@ -26,7 +26,7 @@ const About = ({ slides }) => {
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
             {footballImages.map((slide, index) => {
                 return (
-                    <div id="hero" className={index === current ? 'slide active' : 'slide'} key={index}>
+                    <div id ="hero" className={index === current ? 'slide active' : 'slide'} key={index}>
                         {index === current && (<img src ={slide.image} alt='travel' className='image' />)}
                     </div>
                 )
