@@ -40,14 +40,16 @@ function App() {
       <Router>
         <div className="App">
           <Nav />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/signup" component={Signup} />
+
+          </Switch>
           <main>
             <About slides={footballImages}></About>
           </main>
-          <Switch>
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/" component={Home} />
-          </Switch>
+
         </div>
       </Router>
     </ApolloProvider>
