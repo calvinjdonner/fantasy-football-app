@@ -27,8 +27,11 @@ function Nav() {
             <Link to="/login">Login</Link>
           </li>
           <li className="mx-1">
-              <Link to="/news">News</Link>
-            </li>
+            <Link to="/news">News</Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/form">Player Comparison</Link>
+          </li>
         </ul>
       );
     }
