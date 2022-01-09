@@ -19,7 +19,7 @@ function Schedule() {
   return post.map((post, i) => {
     return (
       <section key={i} className="container" id="containers">
-        <div className="card" id="card" key={`${i}2`}>
+        <div className="schedule-card" id="card" key={`${i}2`}>
           <p className="away-team" id="awayteam" key={`${i}3`}>
             Away Team - {post.AwayTeam}
           </p>

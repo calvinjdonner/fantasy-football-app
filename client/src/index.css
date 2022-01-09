@@ -102,6 +102,7 @@ label,
 input {
   font-family: "PT Serif", serif;
 }
+
 ul,
 a {
   list-style: none;
@@ -115,13 +116,16 @@ a {
   width: 100%;
   position: sticky;
 }
+
 .n-header {
   background-color: var(--oxfordblue);
   color: white;
 }
+
 .n-list {
   color: var(--mikadoyellow);
 }
+
 .n-sub {
   font-size: 20px;
   font-weight: 300;
@@ -129,4 +133,44 @@ a {
   justify-content: center;
   text-align: center;
   padding: 1rem 1rem;
+}
+
+button {
+  padding: 15px;
+  background-color: var(--golden);
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--black);
+}
+
+input {
+  padding: .5rem;
+  font-style: 15px;
+  width: 100%;
+
+}
+
+form {
+  display: block;
+  padding: .5rem .5rem;
+}
+
+.card-header {
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.news {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.schedule-card {
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: .5rem .5rem;
 }
