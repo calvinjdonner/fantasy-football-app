@@ -1,32 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
 body {
   margin: 0;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+:root {
+  --black: #000814ff;
+  --oxfordblue: #001d3dff;
+  --prussianblue: #003566ff;
+  --mikadoyellow: #ffc300ff;
+  --golden: #ffd60aff;
+}
 main {
   margin: 0 auto;
   max-width: 90%;
   padding: 50px 30px;
 }
-
 #about {
   font-family: "Spectral SC", serif;
   margin: 0;
   padding: 2rem;
   font-size: 5rem;
-  color: white;
+  background-color: var(--black);
   text-align: center;
 }
-
 .navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 #hero {
   position: relative;
   background-size: cover;
@@ -34,13 +37,12 @@ main {
   display: grid;
   place-items: center;
 }
-
 .right-arrow {
   position: absolute;
   top: 50%;
   right: 32px;
   font-size: 3rem;
-  color: #000;
+  color: var(--golden);
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -50,12 +52,11 @@ main {
   top: 50%;
   left: 32px;
   font-size: 3rem;
-  color: #000;
+  color: var(--golden);
   z-index: 10;
   cursor: pointer;
   user-select: none;
 }
-
 .slider {
   position: relative;
   height: 100vh;
@@ -67,6 +68,7 @@ main {
   width: 1000px;
   height: 600px;
   border-radius: 10px;
+  background-color: var(--black);
 }
 .slide {
   opacity: 0;
@@ -77,27 +79,54 @@ main {
   transition-duration: 1s;
   transform: scale(1.08);
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border: 2px solid #53940b;
 }
-
 .container p {
   display: flex;
   margin: 10px;
   padding: 5px;
 }
-
 #page-title {
   text-align: center;
   font-size: 5rem;
 }
-
+label,
+input {
+  font-family: "PT Serif", serif;
+}
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "PT Serif", serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 30px;
+  width: 100%;
+  position: sticky;
+}
+.n-header {
+  background-color: var(--oxfordblue);
+  color: white;
+}
+.n-list {
+  color: var(--mikadoyellow);
+}
+.n-sub {
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 1rem;
+}
