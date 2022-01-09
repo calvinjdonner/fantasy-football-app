@@ -44,9 +44,6 @@ function App() {
       <Router>
         <div className="App">
           <Nav />
-          <main>
-            <About slides={footballImages}></About>
-          </main>
           <Switch>
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
@@ -55,6 +52,10 @@ function App() {
             {/* <Route exact path="/results" component={Results} /> */}
             <Route exact path="/" component={Home} />
           </Switch>
+          <main>
+            <About slides={footballImages}></About>
+          </main>
+
         </div>
       </Router>
     </ApolloProvider>
