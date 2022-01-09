@@ -16,21 +16,21 @@ function Schedule() {
   } ,[]);
   if (!post) return null;
 
-  return post.map((post) => {
+  return post.map((post, i) => {
     return (
-      <section className="container" id="containers">
-        <div className="card" id="card" key={post.data}>
-          <p className="away-team" id="awayteam">
+      <section key={i} className="container" id="containers">
+        <div className="card" id="card" key={`${i}2`}>
+          <p className="away-team" id="awayteam" key={`${i}3`}>
             Away Team - {post.AwayTeam}
           </p>
-          <p className="home-team" id="hometeam">
+          <p className="home-team" id="hometeam" key={`${i}4`}>
             Home Team - {post.HomeTeam}
           </p>
           <span />
-          <p className="day-date" id="date">
+          <p className="day-date" id="date" key={`${i}5`}>
             Date {post.Date}
           </p>
-          <p className="forecast-wind" id="forecastwind">
+          <p className="forecast-wind" id="forecastwind" key={`${i}6`}>
             {" "}
             Wind speed - {post.ForecastWindSpeed + " mph"}
           </p>
