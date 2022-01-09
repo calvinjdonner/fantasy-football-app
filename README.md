@@ -48,9 +48,9 @@
   ## GitHub :octocat:
   [Calvin Donner](https://github.com/calvinjdonner)
 
-  [Tyler Sundquist]()
+  [Tyler Sundquist](https://github.com/tylersund72)
 
-  [Mitchell Lyon]()
+  [Mitchell Lyon](https://github.com/mitchlyon)
 
   ## Questions ❓
   Reach out to any of our talented team members with questions! 
