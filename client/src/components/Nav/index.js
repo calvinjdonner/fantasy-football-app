@@ -15,6 +15,15 @@ function Nav() {
               Logout
             </a>
           </li>
+          <li className="mx-1">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/news">News</Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/form">Player Comparison</Link>
+          </li>
         </ul>
       );
     } else {
