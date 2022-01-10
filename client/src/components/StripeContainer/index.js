@@ -14,5 +14,3 @@ export default function StripeContainer() {
         </Elements>
     )
 }
-
-export default StripeContainer;

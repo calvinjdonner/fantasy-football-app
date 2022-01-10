@@ -16,8 +16,9 @@ import Home from "./pages/Home";
 import About from "./components/About";
 import News from "./components/News";
 import Form from "./components/Form";
+// import StripeContainer from "./components/StripeContainer";
+// import PaymentForm from "./components/PaymentForm";
 // import Results from "./components/Results";
-
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -51,11 +52,12 @@ function App() {
             <Route exact path="/form" component={Form} />
             {/* <Route exact path="/results" component={Results} /> */}
             <Route exact path="/" component={Home} />
+            {/* <h1>Donate</h1>
+            {showItem ? <StripeContainer/> : <> <h3>$2.00</h3></>} */}
           </Switch>
           <main>
             <About slides={footballImages}></About>
           </main>
-
         </div>
       </Router>
     </ApolloProvider>
