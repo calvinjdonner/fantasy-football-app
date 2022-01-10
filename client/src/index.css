@@ -87,7 +87,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 2px solid #53940b;
+  border: 1px solid var(--golden);
 }
 .container p {
   display: flex;
@@ -173,4 +173,86 @@ form {
   justify-content: center;
   text-align: center;
   padding: .5rem .5rem;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 30px 10px;
+  }
+
+  #about {
+    font-family: "Spectral SC", serif;
+    margin: 0;
+    padding: 1rem;
+    font-size: 4rem;
+  }
+
+  .right-arrow {
+    font-size: 1rem;
+  }
+
+  .left-arrow {
+    font-size: 2rem;
+  }
+
+  .slider {
+    height: 60vh;
+  }
+  
+  .image {
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+  }
+
+  .container p {
+    margin: 5px;
+    padding: 2.5px;
+  }
+
+  #page-title {
+    font-size: 3rem;
+  }
+  
+  ul,
+  a {
+    font-weight: 200;
+    font-size: 15px;
+    width: 60%;
+  }
+  
+  
+  .n-sub {
+    font-size: 10px;
+    font-weight: 200;
+    padding: .25rem .25rem;
+  }
+  
+  button {
+    padding: 8px;
+    font-weight: 300;
+  }
+  
+  input {
+    padding: .5rem;
+    font-size: 8px;
+    width: 60%;
+  }
+  
+  .card-header {
+    font-size: 8px;
+    font-weight: 200;
+  }
+  
+  .news {
+    font-size: 8px;
+    font-weight: 200;
+  }
+  
+  .schedule-card {
+    font-size: 8px;
+    font-weight: 200;
+  }
 }
