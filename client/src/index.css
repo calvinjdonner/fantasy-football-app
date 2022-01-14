@@ -84,7 +84,6 @@ code {
     monospace;
 }
 .container {
-  border: 1px solid var(--golden);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
